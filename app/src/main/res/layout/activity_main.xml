@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sn.glidetest.MainActivity">
+
+    <com.sn.glidetest.user.UserLayout
+        android:id="@+id/userLayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnloadimgag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载图片"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="传入UserLayout"
+            android:onClick="loadTargetImage"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="预加载再加载"
+            android:onClick="loadPreImage"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片下载"
+            android:onClick="downloadImage"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进度加载"
+            android:onClick="loadProgressImage"/>
+
+        <ImageView
+            android:id="@+id/ivloadimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.sn.glidetest.user.UserLayout>
+</LinearLayout>
